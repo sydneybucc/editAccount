@@ -23,9 +23,13 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Panel</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/foundation.css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/admin_main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-    <h1>Edit User Page</h1>
+    <h1 class="hidden">Edit User Page</h1>
     <?php if(!empty($message)){echo $message;}?>
     <form action="admin_edituser.php" method="post">
         <label>First Name:</label>

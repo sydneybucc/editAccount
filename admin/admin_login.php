@@ -19,6 +19,10 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Panel</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/foundation.css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/admin_main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
 	<?php if(!empty($message)){ echo $message;} ?>
@@ -29,7 +33,7 @@
 		<label>Password</label>
 		<input type="password" name="password" value="">
 		<br><br>
-		<input type="submit" name="submit" value="Show me the money">
+		<input type="submit" name="submit" value="Sign In">
 	</form>
 
 </body>

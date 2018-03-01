@@ -7,6 +7,10 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Panel</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/foundation.css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/admin_main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
 	<?php echo $_SESSION['user_name'];  ?>

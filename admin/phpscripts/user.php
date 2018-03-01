@@ -1,9 +1,10 @@
 <?php
     function createUser($fname,$username,$password,$email,$userlvl){
         include('connect.php');
-        $userString = "INSERT INTO tbl_user VALUES (NULL,'{$fname}','{$username}','{$password}','{$email}',NULL,'{$userlvl}','no')";
+        //wanted to change $userstring to a different insert, user_date wouldn't be allowed to be NULL.
+        $userString = "INSERT INTO tbl_user (user_fname,  user_name,  user_pass, user_email, user_level) VALUES ('{$fname}', '{$username}',  '{$password}', '{$email}', '{$userlvl}')";
         // echo $userString;
-        $userQuery = mysqli_query($link,$userString);
+        $userQuery = mysqli_query($link, $userString);
         if($userQuery){
             redirect_to('admin_index.php');
         }else{
